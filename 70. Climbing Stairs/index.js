@@ -1,17 +1,17 @@
 var climbStairs = function (factor) {
-    // 1 - 1
-    // 2 - 2
-    // 3 - 3
-    // 4 - 5
-    // 5 - 8
-    // 6 - 13
-    // 7 - 21 
-
-    for (let index = 1; index <= factor; index++) {
-        console.log("[FACTOR]", index);
+    if (factor <= 2) {
+        return factor
     }
 
+    let lastResult = 2
+    let penultimate = 1
 
+    for (let index = 3; index <= factor; index++) {
+        lastResult = lastResult + penultimate
+        penultimate = lastResult - penultimate
+    }
+
+    return lastResult
 };
 
-climbStairs(7)
+console.log(climbStairs(7))
