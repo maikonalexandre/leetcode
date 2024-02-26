@@ -38,4 +38,3 @@ var isHappy = function (n) {
 };
 
 
-console.log(isHappy(1));
