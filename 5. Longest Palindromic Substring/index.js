@@ -5,8 +5,6 @@ var longestPalindrome = function (s) {
         const str = expandPalindrome(Number(i), Number(i))
         const str2 = expandPalindrome(Number(i), Number(i) + 1)
 
-        console.log(str, str2);
-
         if (str.length > result.length) {
             result = str
         }
