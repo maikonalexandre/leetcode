@@ -3,7 +3,6 @@
 
 //     for (let i = 0; i <= nums.length; i++) {
 //         if (nums[i] !== i) {
-//             console.log("here", nums[i], i);
 //             return i
 //         }
 //     }
