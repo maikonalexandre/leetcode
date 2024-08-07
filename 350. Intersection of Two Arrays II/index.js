@@ -1,4 +1,3 @@
-console.time()
 var intersect1 = function (nums1, nums2) {
     nums1.sort((a, b) => a - b)
     nums2.sort((a, b) => a - b)
@@ -29,12 +28,10 @@ var intersect1 = function (nums1, nums2) {
 
     return arr
 };
-console.timeEnd()
 
 //time expected Exceeded
 
 
-console.time()
 var intersect = function (nums1, nums2) {
     const map = new Map()
 
@@ -62,6 +59,11 @@ var intersect = function (nums1, nums2) {
 
     return arr
 };
+console.time()
+intersect1(nums1 = [1, 2, 2, 1], nums2 = [2, 2])
 console.timeEnd()
 
-console.log(intersect1(nums1 = [1, 2, 2, 1], nums2 = [2, 2]));
+
+console.time()
+intersect(nums1 = [1, 2, 2, 1], nums2 = [2, 2])
+console.timeEnd()
